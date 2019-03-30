@@ -1,0 +1,2 @@
+export const CHAT_BOX_LOADED = 'CHAT_BOX_LOADED';
+export const SEND_MESSAGE = 'SEND_MESSAGE';

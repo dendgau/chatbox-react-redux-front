@@ -1,0 +1,32 @@
+[
+  {
+    "name": "User1",
+    "avatar": "assets/img/nobody.jpg",
+    "status": 1
+  },
+  {
+    "name": "User2",
+    "avatar": "assets/img/nobody.jpg",
+    "status": 0
+  },
+  {
+    "name": "User3",
+    "avatar": "assets/img/nobody.jpg",
+    "status": 1
+  },
+  {
+    "name": "User4",
+    "avatar": "assets/img/nobody.jpg",
+    "status": 1
+  },
+  {
+    "name": "User5",
+    "avatar": "assets/img/nobody.jpg",
+    "status": 1
+  },
+  {
+    "name": "User6",
+    "avatar": "assets/img/nobody.jpg",
+    "status": 1
+  }
+]
