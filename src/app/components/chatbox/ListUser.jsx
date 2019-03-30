@@ -16,12 +16,6 @@ const mapDispatchToProps = dispatch => ({
 });
 
 class ListUser extends Component {
-    constructor(props) {
-        super(props);
-        this.state = {
-            users: ['user1', 'user2', 'user3', 'user4']
-        }
-    }
     componentWillMount() {
         let funcDispatch = dispatch => {
             dispatch({
