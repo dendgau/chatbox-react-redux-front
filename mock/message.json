@@ -1,0 +1,18 @@
+[
+  {
+    "level": 0,
+    "content": "content1"
+  },
+  {
+    "level": 1,
+    "content": "content1"
+  },
+  {
+    "level": 1,
+    "content": "content2"
+  },
+  {
+    "level": 1,
+    "content": "content3"
+  }
+]

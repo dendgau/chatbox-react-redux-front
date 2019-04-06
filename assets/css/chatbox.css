@@ -21,7 +21,8 @@
 .chat-page .chat-page-content .list-user .user-item {
     width: 100%;
     display: flex;
-    margin-bottom: 10px
+    margin-bottom: 10px;
+    cursor: pointer;
 }
 .chat-page .chat-page-content .list-user .user-item .avatar img {
     width: 70px;
@@ -42,4 +43,8 @@
 .chat-page .chat-page-content .box-chat .messages .m-item .m-level1 {
     float: left;
     width: 40%;
+}
+.chat-page .chat-page-content .list-user .user-item.user-picked {
+    color: red;
+    font-weight: bolder;
 }
