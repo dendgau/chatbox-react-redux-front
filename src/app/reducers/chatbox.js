@@ -8,7 +8,7 @@ export default (state = [], action) => {
         case CHAT_BOX_LOADED:
             return {
                 ...state,
-                users: action.payload.users,
+                users: action.payload.users ? action.payload.users : [],
             }
         case SEND_MESSAGE:
         default:
