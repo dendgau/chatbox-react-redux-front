@@ -3,16 +3,19 @@ import {connect} from 'react-redux';
 import {PICK_USER_CHAT} from "../../constants/actionType";
 
 const mapDispatchToProps = dispatch => ({
-    onSelect: (userId) => dispatch({
+    onSelect: (userInfo) => dispatch({
         type: PICK_USER_CHAT,
-        payload: {userId: userId}
+        payload: {userInfo: userInfo}
     }),
 });
 
 class UserItem extends Component {
     onSelectUser(e) {
-        let userId = this.props.id;
-        this.props.onSelect(userId);
+        this.props.onSelect({
+            id: this.props.id,
+            name: this.props.name,
+            avatar: this.props.avatar,
+        });
     }
 
     render() {
@@ -21,12 +24,12 @@ class UserItem extends Component {
         return (
             <div className={['user-item', classIsPicking].join(' ')} onClick={(e) => this.onSelectUser(e)}>
                 <div className={"avatar"}>
-                    <img src={"./assets/img/nobody.jpg"}/>
+                    <img src={this.props.avatar}/>
                 </div>
                 <div className={"content"}>
-                    <div className={"name"}>
+                    <p className={"name"}>
                         {this.props.name}
-                    </div>
+                    </p>
                 </div>
             </div>
         );

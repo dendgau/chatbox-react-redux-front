@@ -7,7 +7,7 @@ import {CHAT_BOX_LOADED} from '../../constants/actionType.js';
 
 const mapStateToProps = state => ({
     users: state.chatBox.users,
-    currentUserId: state.chatBox.currentUserId
+    currentUser: state.chatBox.currentUser
 });
 
 const mapDispatchToProps = dispatch => ({
@@ -26,13 +26,20 @@ class ListUser extends Component {
 
     render() {
         let users = this.props.users;
-        let currentUserId = this.props.currentUserId;
+        let currentUser = this.props.currentUser;
 
         return (
             <div className={"list-user"}>
                 {
                     typeof users != 'undefined' ? users.map((user, index) =>
-                    <UserItem key={user.id} id={user.id} name={user.name} isPicking={ currentUserId == user.id ? true : false } />) : ''
+                        <UserItem
+                            key={user.id}
+                            id={user.id}
+                            name={user.name}
+                            avatar={user.avatar}
+                            isPicking={ currentUser.id == user.id ? true : false }
+                        />
+                    ) : ''
                 }
             </div>
         );

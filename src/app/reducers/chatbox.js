@@ -11,20 +11,23 @@ export default (state = [], action) => {
             return {
                 ...state,
                 users: action.payload.users ? action.payload.users : [],
+                currentUser: action.payload.users ? action.payload.users[0] : null
             }
         case PICK_USER_CHAT:
             return {
                 ...state,
-                currentUserId: action.payload.userId
+                currentUser: action.payload.userInfo
             }
         case GET_MESSAGE:
             return {
                 ...state,
-                messages: {
-                    1: action.payload.messages ? action.payload.messages : []
-                }
+                messages: action.payload.messages
             }
         case SEND_MESSAGE:
+            return {
+                ...state,
+                messages: action.payload.messages
+            }
         default:
             return {
                 ...state

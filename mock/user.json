@@ -1,32 +1,32 @@
 [
   {
     "id": 1,
-    "name": "User1",
-    "avatar": "assets/img/nobody.jpg"
+    "name": "Quỳnh Như",
+    "avatar": "./assets/img/59972052_1612031272273944_2833841214564859904_n.jpg"
   },
   {
     "id": 2,
-    "name": "User2",
-    "avatar": "assets/img/nobody.jpg"
+    "name": "Kiều Trọng Dương",
+    "avatar": "./assets/img/50234237_2290244027661614_497254760726921216_n.jpg"
   },
   {
     "id": 3,
-    "name": "User3",
-    "avatar": "assets/img/nobody.jpg"
+    "name": "Anh Phan",
+    "avatar": "./assets/img/40432298_2014020071949759_4993803619460448256_n.jpg"
   },
   {
     "id": 4,
-    "name": "User4",
-    "avatar": "assets/img/nobody.jpg"
+    "name": "Đăng Thịnh",
+    "avatar": "./assets/img/56887132_324634181578390_4910418817978466304_n.jpg"
   },
   {
     "id": 5,
-    "name": "User5",
-    "avatar": "assets/img/nobody.jpg"
+    "name": "Nhựt Trần",
+    "avatar": "./assets/img/51332124_781697212201452_804504781073678336_n.jpg"
   },
   {
     "id": 6,
-    "name": "User6",
-    "avatar": "assets/img/nobody.jpg"
+    "name": "Bình Lê",
+    "avatar": "./assets/img/28795831_2027452064246611_655250099470863139_n.jpg"
   }
 ]
